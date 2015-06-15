@@ -1,0 +1,11 @@
+# language.name=English
+# language.region=US
+# language.code=en_US
+
+# Block Localizations
+tile.ict:ict.name=Interactive Crafting Table
+# GUI Localizations
+container.ict.ict=Interactive Crafting Table
+
+# Key Bind Localizations
+keys.ict:category=Interactive Crafting Table

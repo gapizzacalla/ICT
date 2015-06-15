@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ict",
+  "name": "Interactive Crafting Table",
+  "description": "NO GUI'S ALLOWED! Craft by clicking the block!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ThePizzaBoy-"],
+  "credits": "Forge/FML Team",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
