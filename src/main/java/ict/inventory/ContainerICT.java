@@ -230,16 +230,16 @@ public class ContainerICT extends Container
                 }
             }
         }
-        ItemStack returnStack = inventoryplayer.getItemStack();
-        if (returnStack != null)
+        if (itemStack != null)
         {
-            if (!this.mergeItemStack(returnStack, 37, 45, false))
+            if (!this.mergeItemStack(itemStack, 37, 45, false))
             {
-                this.mergeItemStack(returnStack, 10, 36, false);
+                this.mergeItemStack(itemStack, 10, 36, false);
             }
             inventoryplayer.setItemStack(null);
         }
         player.inventoryContainer.detectAndSendChanges();
+        this.detectAndSendChanges();
         return itemStack;
     }
 

@@ -67,6 +67,7 @@ public class TileEntityICT extends TileEntity implements ISidedInventory
             {
                 itemStack = itemStack.splitStack(amount);
                 markDirty();
+                worldObj.markBlockForUpdate(this.xCoord, this.yCoord, this.zCoord);
             }
         }
         return itemStack;
@@ -87,6 +88,7 @@ public class TileEntityICT extends TileEntity implements ISidedInventory
         if (itemStack != null && itemStack.stackSize > getInventoryStackLimit())
             itemStack.stackSize = getInventoryStackLimit();
         markDirty();
+        worldObj.markBlockForUpdate(this.xCoord, this.yCoord, this.zCoord);
     }
 
     @Override

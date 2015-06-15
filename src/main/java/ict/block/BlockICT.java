@@ -73,13 +73,6 @@ public class BlockICT extends BlockContainerICT
             else if (!player.isSneaking()) //place item in table
             {
                 ContainerICT container = new ContainerICT(player.inventory, world, x, y, z, tileEntity);
-                for (int k = 0; k < 9; k++)
-                {
-                    if (container.craftMatrix.getStackInSlot(k) != null)
-                    {
-                        System.out.println(container.craftMatrix.getStackInSlot(k).getDisplayName());
-                    }
-                }
                 if (heldItem != null)
                 {
                     if (tileEntity.getStackInSlot(index) == null)
@@ -99,20 +92,15 @@ public class BlockICT extends BlockContainerICT
                     player.addChatComponentMessage(new ChatComponentText("Skipping slot " + String.valueOf(index + 1)));
                     countIndex();
                 }
-                for (int i = 0; i < 9; i++)
-                {
-                    container.craftMatrix.setInventorySlotContents(i, tileEntity.getStackInSlot(i));
-                }
+                syncContainerWithTileEntity(container, tileEntity);
                 container.detectAndSendChanges();
             }
             else //craft
             {
                 ContainerICT container = new ContainerICT(player.inventory, world, x, y, z, tileEntity);
-                for (int i = 0; i < 9; i++)
-                {
-                    container.craftMatrix.setInventorySlotContents(i, tileEntity.getStackInSlot(i));
-                }
+                syncContainerWithTileEntity(container, tileEntity);
                 checkCraft(container, player);
+                syncContainerWithTileEntity(container, tileEntity);
             }
         }
         return true;
@@ -170,5 +158,13 @@ public class BlockICT extends BlockContainerICT
             player.addChatComponentMessage(new ChatComponentText("Recipe not found!"));
         }
         container.detectAndSendChanges();
+    }
+
+    private void syncContainerWithTileEntity(ContainerICT container, TileEntityICT tileEntity)
+    {
+        for (int i = 0; i < 9; i++)
+        {
+            container.craftMatrix.setInventorySlotContents(i, tileEntity.getStackInSlot(i));
+        }
     }
 }
