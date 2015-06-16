@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b1f448c-fd2a-40fa-9390-91a2c8698d12" name="Default" comment="" />
+    <list default="true" id="1b1f448c-fd2a-40fa-9390-91a2c8698d12" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ict/ICT.java" afterPath="$PROJECT_DIR$/src/main/java/ict/ICT.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+    </list>
     <ignored path="InteractiveCraftingTable-1.7.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -103,24 +106,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ICT.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ICT.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ict/ICT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2738#2739#0" expanded="false" />
-                <element signature="e#2800#2801#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.29423076">
+              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlockICT.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BlockICT.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ict/block/BlockICT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.12877263">
+            <state vertical-scroll-proportion="0.0">
               <caret line="74" column="104" selection-start-line="74" selection-start-column="104" selection-end-line="74" selection-end-column="104" />
               <folding />
             </state>
@@ -760,7 +759,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ict/client/gui/inventory/GuiRectangle.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/client/gui/inventory/GuiInterCT.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/handler/KeyHandler.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/ict/client/renderer/TileRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/client/renderer/ItemRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/item/crafting/GenericItem.java" />
@@ -774,7 +772,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ict/block/BlockContainerICT.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/proxy/CommonProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/client/gui/inventory/GuiHud.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ict/ICT.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/tileentity/TileEntityICT.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/client/ItemRenderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/client/ItemsRenderer.java" />
@@ -782,6 +779,8 @@
         <option value="$PROJECT_DIR$/src/main/java/ict/helper/RenderHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/inventory/ContainerICT.java" />
         <option value="$PROJECT_DIR$/src/main/java/ict/block/BlockICT.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/ict/ICT.java" />
       </list>
     </option>
   </component>
@@ -819,7 +818,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -940,7 +939,7 @@
       <recent name="D:\Minecraft Modding\1.7\InteractiveCraftingTable-1.7\src\main\java\ict\item\crafting" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Minecraft Client">
+  <component name="RunManager" selected="Gradle.InteractiveCraftingTable-1.7 [build]">
     <configuration default="false" name="InteractiveCraftingTable-1.7 [setupDecompWorkspace]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1358,7 +1357,7 @@
       <workItem from="1434398796533" duration="2971000" />
       <workItem from="1434401951281" duration="843000" />
       <workItem from="1434403569130" duration="588000" />
-      <workItem from="1434406701468" duration="3324000" />
+      <workItem from="1434406701468" duration="3989000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed syncing issue&#10;">
       <created>1434407763642</created>
@@ -1370,7 +1369,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119658000" />
+    <option name="totallyTimeSpent" value="120323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1384,17 +1383,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44794953" sideWeight="0.5053305" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43737167" sideWeight="0.5052083" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32597265" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290469" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32864583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3075693" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44794953" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30052084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43737167" sideWeight="0.49479166" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32597265" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1476,11 +1475,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2738#2739#0" expanded="false" />
-            <element signature="e#2800#2801#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1742,18 +1737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ict/ICT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2738#2739#0" expanded="false" />
-            <element signature="e#2800#2801#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eclipse/crash-reports/crash-2015-05-07_01.24.23-server.txt">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -1833,8 +1816,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ict/block/BlockICT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.12877263">
+        <state vertical-scroll-proportion="0.0">
           <caret line="74" column="104" selection-start-line="74" selection-start-column="104" selection-end-line="74" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13682093">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ict/ICT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29423076">
+          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
           <folding />
         </state>
       </provider>
