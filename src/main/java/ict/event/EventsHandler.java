@@ -36,6 +36,8 @@ public class EventsHandler
     {
         Minecraft mc = Minecraft.getMinecraft();
         World world = mc.theWorld;
+        int xSize = mc.displayWidth;
+        int ySize = mc.displayHeight;
         if (event.type == RenderGameOverlayEvent.ElementType.ALL)
         {
             MovingObjectPosition mop = mc.objectMouseOver;
