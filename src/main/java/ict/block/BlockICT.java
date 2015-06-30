@@ -15,10 +15,14 @@ import net.minecraft.world.World;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Keyboard;
 
+import java.util.Random;
+
 public class BlockICT extends BlockContainerICT
 {
     private static String name = "ict";
     private static int index = 0;
+    private static boolean craftSuccess = false;
+
     public BlockICT(Material material)
     {
         super(material);
@@ -103,6 +107,27 @@ public class BlockICT extends BlockContainerICT
                 syncContainerWithTileEntity(container, tileEntity);
             }
         }
+        if (craftSuccess)
+        {
+            Random random = new Random();
+            float f = (float)x + 0.5F;
+            float f1 = (float)y + 0.0F + random.nextFloat() * 6.0F / 16.0F;
+            float f2 = (float)z + 0.5F;
+            float f3 = 0.52F;
+            float f4 = random.nextFloat() * 0.6F - 0.3F;
+            world.spawnParticle("magicCrit", (double)(f - f3), (double)f1 + 0.5, (double)(f2 + f4), 0.0D, 0.5D, 0.0D);
+            world.spawnParticle("magicCrit", (double)(f - f3), (double)f1 + 0.5, (double)(f2 + f4), 0.0D, 0.5D, 0.0D);
+
+            world.spawnParticle("magicCrit", (double)(f + f3), (double)f1 + 0.5, (double)(f2 + f4), 0.0D, 0.5D, 0.0D);
+            world.spawnParticle("magicCrit", (double)(f + f3), (double)f1 + 0.5, (double)(f2 + f4), 0.0D, 0.5D, 0.0D);
+
+            world.spawnParticle("magicCrit", (double)(f + f4), (double)f1 + 0.5, (double)(f2 - f3), 0.0D, 0.5D, 0.0D);
+            world.spawnParticle("magicCrit", (double)(f + f4), (double)f1 + 0.5, (double)(f2 - f3), 0.0D, 0.5D, 0.0D);
+
+            world.spawnParticle("magicCrit", (double)(f + f4), (double)f1 + 0.5, (double)(f2 + f3), 0.0D, 0.5D, 0.0D);
+            world.spawnParticle("magicCrit", (double)(f + f4), (double)f1 + 0.5, (double)(f2 + f3), 0.0D, 0.5D, 0.0D);
+            craftSuccess = false;
+        }
         return true;
     }
 
@@ -144,6 +169,24 @@ public class BlockICT extends BlockContainerICT
         }
     }
 
+    @Override
+    public int getRenderType()
+    {
+        return -1;
+    }
+
+    @Override
+    public boolean isOpaqueCube()
+    {
+        return false;
+    }
+
+    @Override
+    public boolean renderAsNormalBlock()
+    {
+        return false;
+    }
+
     private void checkCraft(ContainerICT container, EntityPlayer player)
     {
         ItemStack craftedItem = container.slotClick(0, 0, 0, player);
@@ -152,6 +195,7 @@ public class BlockICT extends BlockContainerICT
             index = 0;
             player.addChatComponentMessage(new ChatComponentText("Crafted: " + craftedItem.getDisplayName()));
             player.inventoryContainer.detectAndSendChanges();
+            craftSuccess = true;
         }
         else
         {

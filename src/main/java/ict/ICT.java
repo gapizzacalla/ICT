@@ -1,5 +1,7 @@
 package ict;
 
+import cpw.mods.fml.client.registry.ClientRegistry;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -10,10 +12,12 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import ict.block.BlockICT;
+import ict.client.renderer.TileEntityICTRenderer;
 import ict.event.EventsHandler;
 import ict.handler.ConfigurationHandler;
 import ict.handler.PacketHandler;
 import ict.helper.LogHelper;
+import ict.proxy.ClientProxy;
 import ict.proxy.CommonProxy;
 import ict.proxy.IProxy;
 import ict.tileentity.TileEntityICT;
@@ -61,6 +65,7 @@ public class ICT
         PacketHandler.registerPackets();
         MinecraftForge.EVENT_BUS.register(new EventsHandler());
         GameRegistry.registerTileEntity(TileEntityICT.class, MOD_ID + "tile" + ict.getName());
+        ClientProxy.registerProxies();
         registerRecipes();
         LogHelper.info("Initialization Completed");
     }
