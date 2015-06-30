@@ -32,6 +32,7 @@ public class BlockICT extends BlockContainerICT
         guiID = 1;
         setBlockName(name);
         setCreativeTab(CreativeTabs.tabBlock);
+        setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1F/16F*8F, 1.0F);
     }
 
     @Override

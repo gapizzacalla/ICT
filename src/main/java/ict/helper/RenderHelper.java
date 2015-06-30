@@ -1,5 +1,7 @@
 package ict.helper;
 
+import ict.ICT;
+import ict.tileentity.TileEntityICT;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
@@ -8,13 +10,36 @@ import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.texture.TextureMap;
+import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraftforge.client.IItemRenderer;
 
-public class RenderHelper
+public class RenderHelper implements IItemRenderer
 {
+    @Override
+    public boolean handleRenderType(ItemStack itemStack, ItemRenderType type)
+    {
+        return true;
+    }
+
+    @Override
+    public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack itemStack, ItemRendererHelper helper)
+    {
+        return true;
+    }
+
+    @Override
+    public void renderItem(ItemRenderType type, ItemStack itemStack, Object... data)
+    {
+        if (itemStack.getDisplayName().equals(new ItemStack(ICT.ict, 1).getDisplayName()))
+        {
+            TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntityICT(), 0.0D, 0.0D, 0.0D, 0.0F);
+        }
+    }
+
     public static void render(int index, int offset, ItemStack itemStack)
     {
         if (itemStack != null)
