@@ -14,8 +14,11 @@ import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
+<<<<<<< HEAD
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.item.EntityItemFrame;
+=======
+>>>>>>> 07c795cef28e675c215a95831217e4389fe0a285
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.Item;
@@ -46,6 +49,7 @@ public class RenderHelper implements IItemRenderer
     {
         if (type == ItemRenderType.EQUIPPED || type == ItemRenderType.EQUIPPED_FIRST_PERSON || type == ItemRenderType.INVENTORY)
         {
+<<<<<<< HEAD
             if (itemStack.getDisplayName().equals(new ItemStack(ICT.ict, 1).getDisplayName()))
             {
                 TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntityICT(), 0.0D, 0.0D, 0.0D, 1.0F);
@@ -54,6 +58,9 @@ public class RenderHelper implements IItemRenderer
         else if (type == ItemRenderType.ENTITY)
         {
 
+=======
+            TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntityICT(), 0.0D, 0.0D, 0.0D, 1.0F);
+>>>>>>> 07c795cef28e675c215a95831217e4389fe0a285
         }
     }
 
